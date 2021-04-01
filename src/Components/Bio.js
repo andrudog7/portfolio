@@ -8,7 +8,7 @@ class Bio extends React.Component {
       <div id="bio">
           <br></br><br></br><br></br>
           <h2 className="bio-header" font-weight="strong">Hello, it's nice to meet you!</h2>
-        <Image src={Running} style={{opacity:.5,height:"50vh",width:"95vw",top:"-25vh"}}></Image>
+        <Image src={Running} style={{opacity:.5,height:"40vh",width:"95vw",top:"-20vh"}}></Image>
         
         <p>Full stack web developer.  I love to run.</p>
       </div>
