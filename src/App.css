@@ -62,3 +62,7 @@
     position: relative;
     margin-left: 20%;
 }
+
+#bio {
+  text-align: center;
+}
