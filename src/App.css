@@ -40,3 +40,25 @@
 .bio-header {
   font-family: arial black;
 }
+
+.bio-paragraph {
+  font-family: system-ui;
+}
+
+#project-card {
+  background-color: lightcoral;
+  width: 90%;
+  padding: 10px;
+}
+
+#project-column {
+  background-color: lightcyan;
+  padding: 20px;
+}
+
+#projects {
+    background: black;
+    width: 60%;
+    position: relative;
+    margin-left: 20%;
+}
