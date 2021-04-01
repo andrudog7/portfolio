@@ -10,13 +10,24 @@ class ProjectsContainer extends React.Component {
                 id: 1,
                 name: "Brunchr",
                 logline: "A web application where users can find and classify brunch spots",
-                descriptions: "React - Redux - Thunk - Semantic UI - Ruby on Rails API - PostgreSQL database", 
+                descriptions: "React | Redux | Thunk | Semantic UI | Ruby on Rails API | PostgreSQL database", 
                 url: "https://brunchr.herokuapp.com/", 
                 github:"https://github.com/andrudog7/brunchr", 
                 blog: "https://andrewksmoker.medium.com/i-thought-i-thunk-until-redux-2ba0061ed9cc",
                 video:"https://www.youtube.com/watch?v=USgGqzY2vBk", 
                 img: Brunchr
-              },
+            },
+            {
+                id: 2,
+                name: "Brunch Madness",
+                logline: "A game where players act as a waiter during a busy brunch period",
+                descriptions: "Javascript | Ruby on Rails API | PostgreSQL database | Responsive vanilla CSS", 
+                url: "https://andrudog7.github.io/brunch_madness/", 
+                github:"https://github.com/andrudog7/brunch_madness", 
+                blog: "https://andrewksmoker.medium.com/i-thought-i-thunk-until-redux-2ba0061ed9cc",
+                video:"https://www.youtube.com/watch?v=USgGqzY2vBk", 
+                img: Brunchr
+            },
         ]
     }
 
