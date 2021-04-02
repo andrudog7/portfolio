@@ -29,15 +29,6 @@ class Navbar extends React.Component {
               active={activeItem === 'blog posts'}
               onClick={this.handleItemClick}
             />
-            <Menu.Menu position='right'>
-              <Menu.Item>
-                <Input
-                  transparent
-                  icon={{ name: 'search', link: true }}
-                  placeholder='Search users...'
-                />
-              </Menu.Item>
-            </Menu.Menu>
           </Menu>
   
           {this.state.activeItem === "bio" ? <Segment attached="bottom"><Bio></Bio></Segment> : null}
