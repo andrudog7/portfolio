@@ -11,10 +11,9 @@ class Bio extends React.Component {
   render() {
     return (
       <div id="bio">
-        <Image src={Backdrop} style={{opacity:.5,height:"30vh",width:"98vw"}}></Image>
+        <Image src={Backdrop} style={{opacity:.5,height:"25vh",width:"98vw"}}></Image>
         <Container text>
-            <br></br><br></br>
-            <h2 className="bio-header" style={{marginTop:"-30px"}}>Nice to Meet You!</h2>
+            <br></br>
             <figure style={{display:"inline-block",float:"left",marginTop:"0px"}}>
                 <figcaption>ANDREW SMOKER</figcaption><br></br>
                 <Image src={Profile} circular floated="left" size="medium"></Image>

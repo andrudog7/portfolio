@@ -66,3 +66,15 @@
 #bio {
   text-align: center;
 }
+
+#namelogo {
+  margin-left: 28%;
+  margin-bottom: -5em;
+  margin-top: -3em;
+  margin-right: -4em;
+}
+
+#name {
+  font-size: 4em;
+  margin-bottom: -20px;
+}
