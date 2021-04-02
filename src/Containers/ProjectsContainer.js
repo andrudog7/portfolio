@@ -2,6 +2,7 @@ import React from 'react'
 import Brunchr from '../Assets/Brunchr.png'
 import Brunch_madness from '../Assets/Brunch_madness.png'
 import ProjectCard from '../Components/ProjectCard'
+import Racetracker from '../Assets/Racetracker.png'
 import { Grid} from 'semantic-ui-react';
 
 class ProjectsContainer extends React.Component {
@@ -38,7 +39,7 @@ class ProjectsContainer extends React.Component {
                 github:"https://github.com/andrudog7/RaceTracker", 
                 blog: "https://andrewksmoker.medium.com/hidden-away-behind-the-rails-magic-9aca0ec80536",
                 video:"https://www.youtube.com/watch?v=4cRLzBoNPYA&t", 
-                img: ""
+                img: Racetracker
             }
         ]
     }
