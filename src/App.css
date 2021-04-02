@@ -46,21 +46,21 @@
 }
 
 #project-card {
-  background-color: lightcoral;
+  background-color: white;
   width: 90%;
   padding: 10px;
 }
 
 #project-column {
-  background-color: lightcyan;
+  background-color: rgb(230, 230, 230);
   padding: 20px;
 }
 
 #projects {
-    background: black;
     width: 60%;
     position: relative;
     margin-left: 20%;
+    padding: .1%
 }
 
 #bio {

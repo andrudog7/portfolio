@@ -5,7 +5,7 @@ class ProjectCard extends React.Component {
   render() {
     return (
       <Grid.Column id="project-column">
-          <Card centered color="red" id="project-card" href={this.props.project.url}>
+          <Card centered color="gray" id="project-card" href={this.props.project.url}>
             <Image src={this.props.project.img} wrapped ui={false} size="medium" />
             <Card.Content>
                 <Card.Header>{this.props.project.name}</Card.Header>
