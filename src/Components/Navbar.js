@@ -29,6 +29,12 @@ class Navbar extends React.Component {
               active={activeItem === 'blog posts'}
               onClick={this.handleItemClick}
             />
+            <Menu.Item
+              name='resume'
+              active={activeItem === 'resume'}
+              onClick={this.handleItemClick}
+              href="https://docs.google.com/document/d/1OQUFMrJGQNaVN5cG-IwrwxA2xk6tio8AHbuf-DP6m_M/edit?usp=sharing"
+            />
           </Menu>
   
           {this.state.activeItem === "bio" ? <Segment attached="bottom"><Bio></Bio></Segment> : null}
