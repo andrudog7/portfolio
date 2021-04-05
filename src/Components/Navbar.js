@@ -1,6 +1,7 @@
 import React from 'react'
 import { Input, Menu, Segment } from 'semantic-ui-react'
 import ProjectsContainer from '../Containers/ProjectsContainer'
+import BlogPostsContainer from '../Containers/BlogPostsContainer'
 import Bio from './Bio'
 
 class Navbar extends React.Component {
@@ -39,6 +40,7 @@ class Navbar extends React.Component {
   
           {this.state.activeItem === "bio" ? <Segment attached="bottom"><Bio></Bio></Segment> : null}
           {this.state.activeItem === "projects" ? <Segment id="projects" attached="bottom"><ProjectsContainer></ProjectsContainer></Segment> : null}
+          {this.state.activeItem === "blog posts" ? <Segment id="blog posts" attached="bottom"><BlogPostsContainer></BlogPostsContainer></Segment> : null}
        
         </div>
       )
