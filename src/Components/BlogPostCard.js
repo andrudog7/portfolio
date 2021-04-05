@@ -9,6 +9,7 @@ class BlogPostCard extends React.Component {
             <Image src={this.props.post.thumbnail} wrapped ui={false} size="medium" />
             <Card.Content>
                 <Card.Header>{this.props.post.title}</Card.Header>
+                <Card.Meta>{this.props.post.categories.map(c => c + " |")}</Card.Meta><br></br>
                 <Card.Description>{this.props.content}</Card.Description>
                 </Card.Content>
             <Card.Content extra>
