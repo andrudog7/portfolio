@@ -13,9 +13,9 @@ class ProjectCard extends React.Component {
                 <Card.Description>{this.props.project.descriptions}</Card.Description>
             </Card.Content>
             <Card.Content extra>
-                <a href={this.props.project.github}><Icon name="github square" size="big" color="black"></Icon></a>
-                <a href={this.props.project.blog}><Image avatar size="small" src="https://www.graphicdesignforum.com/uploads/default/original/2X/0/0e58f26a6dd982e7f04d1286defd4320e6d6153b.jpeg"></Image>  </a>
-                <a href={this.props.project.video}><Icon name="youtube" size="big" color="black"></Icon></a>
+                <a href={this.props.project.github} style={{paddingRight:"10px"}}><Icon name="github square" size="big" color="black"></Icon>Github </a>
+                <a href={this.props.project.blog} style={{paddingRight:"10px"}}><Image avatar size="small" src="https://www.graphicdesignforum.com/uploads/default/original/2X/0/0e58f26a6dd982e7f04d1286defd4320e6d6153b.jpeg"></Image> Blog Post </a>
+                <a href={this.props.project.video} style={{paddingRight:"10px"}}><Icon name="youtube" size="big" color="black"></Icon> Demo Video </a>
             </Card.Content>
         </Card>
       </Grid.Column>

@@ -19,7 +19,7 @@ class BlogPostsContainer extends React.Component {
             let content = []
             content.push(shortenText(data.items[0].content, 110, 300))
             content.push(shortenText(data.items[1].content, 110, 300))
-            content.push(shortenText(data.items[2].content, 178, 300))
+            content.push(shortenText(data.items[2].content, 109, 300))
             content.push(shortenText(data.items[3].content, 109, 300))
             content.push(shortenText(data.items[4].content, 108, 300))
             content.push(shortenText(data.items[5].content, 160, 300))

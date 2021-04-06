@@ -32,7 +32,7 @@ class ProjectsContainer extends React.Component {
             },
             {
                 id: 3,
-                name: "RACETRACKER",
+                name: "Race Tracker",
                 logline: "A web application for runners to record official race data and interact with other runners",
                 descriptions: "Ruby on Rails | PostgreSQL database | OAuth | HTML | Responsive vanilla CSS", 
                 url: "https://race-tracker-2.herokuapp.com/", 
