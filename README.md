@@ -1,3 +1,7 @@
+# Personal Portfolio
+
+I built this app as a resource I could give potential employees.  It is a website of all my accomplishments at Flatiron School.  Excited to share it with everyone!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
