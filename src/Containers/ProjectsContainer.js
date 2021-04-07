@@ -3,6 +3,8 @@ import Brunchr from '../Assets/Brunchr.png'
 import Brunch_madness from '../Assets/Brunch_madness.png'
 import ProjectCard from '../Components/ProjectCard'
 import Racetracker from '../Assets/Racetracker.png'
+import Sinatrarace from '../Assets/sinatra_race.png'
+import Broadway from '../Assets/broadway.png'
 import { Grid} from 'semantic-ui-react';
 
 class ProjectsContainer extends React.Component {
@@ -40,6 +42,28 @@ class ProjectsContainer extends React.Component {
                 blog: "https://andrewksmoker.medium.com/hidden-away-behind-the-rails-magic-9aca0ec80536",
                 video:"https://www.youtube.com/watch?v=4cRLzBoNPYA&t", 
                 img: Racetracker
+            },
+            {
+                id: 4,
+                name: "Race Tracker (Sinatra)",
+                logline: "An application for runners to record and maintain race statistics",
+                descriptions: "Sinatra | PostgreSQL database | Ruby | HTML | Vanilla CSS", 
+                url: "https://race-tracker-app.herokuapp.com/", 
+                github:"https://github.com/andrudog7/sinatra_race_tracker", 
+                blog: "https://andrewksmoker.medium.com/running-into-style-no-choice-but-to-push-forward-8fc9dde80cf",
+                video:"https://www.youtube.com/watch?v=l026i004WTk&t", 
+                img: Sinatrarace
+            },
+            {
+                id: 5,
+                name: "Current Broadway Show Command Line Application",
+                logline: "A ruby gem to quickly access data about currently running Broadway shows from the Playbill website",
+                descriptions: "Ruby | Nokogiri", 
+                url: "", 
+                github:"https://github.com/andrudog7/current_broadway_shows", 
+                blog: "https://andrewksmoker.medium.com/the-emotional-rollercoaster-of-scraping-my-first-ruby-cli-gem-41492f1dea1f",
+                video:"https://www.youtube.com/watch?v=CMmqWVKP56I", 
+                img: Broadway
             }
         ]
     }
