@@ -74,6 +74,13 @@ class Navbar extends React.Component {
               )}
             />
           )
+        },
+        {
+          menuItem: {
+            id: "tab4",
+            content: "Resume",
+            href: "https://docs.google.com/document/d/1OQUFMrJGQNaVN5cG-IwrwxA2xk6tio8AHbuf-DP6m_M/edit?usp=sharing",
+          }
         }
       ];
   

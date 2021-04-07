@@ -6,7 +6,7 @@ import Header from './Components/Header'
 
 class App extends React.Component {
   contextRef = createRef()
-  
+
   componentDidMount() {
     if (window.location.pathname === "/") {
       window.location.pathname = '/bio'
