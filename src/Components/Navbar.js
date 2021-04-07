@@ -1,8 +1,9 @@
 import React from 'react'
-import { Input, Menu, Segment } from 'semantic-ui-react'
+import { Tab } from 'semantic-ui-react'
 import ProjectsContainer from '../Containers/ProjectsContainer'
 import BlogPostsContainer from '../Containers/BlogPostsContainer'
 import Bio from './Bio'
+import {Switch, Route, NavLink} from "react-router-dom"
 
 class Navbar extends React.Component {
     state = { activeItem: 'bio' }
@@ -10,38 +11,77 @@ class Navbar extends React.Component {
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   
     render() {
-      const { activeItem } = this.state
+      const panes = [
+        {
+          menuItem: {
+            as: NavLink,
+            id: "tab1",
+            content: "Bio",
+            to: "/bio",
+            exact: true,
+            key: "bio"
+          },
+          pane: (
+            <Route
+              path="/bio"
+              exact
+              render={() => (
+                <Tab.Pane>
+                  <Bio></Bio>
+                </Tab.Pane>
+              )}
+            />
+          )
+        },
+        {
+          menuItem: {
+            as: NavLink,
+            id: "tab2",
+            content: "Projects",
+            to: "/projects",
+            exact: true,
+            key: "projects"
+          },
+          pane: (
+            <Route
+              path="/projects"
+              exact
+              render={() => (
+                <Tab.Pane>
+                  <ProjectsContainer></ProjectsContainer>
+                </Tab.Pane>
+              )}
+            />
+          )
+        },
+        {
+          menuItem: {
+            as: NavLink,
+            id: "tab3",
+            content: "Blog Posts",
+            to: "/blog_posts",
+            exact: true,
+            key: "blogs"
+          },
+          pane: (
+            <Route
+              path="/blog_posts"
+              exact
+              render={() => (
+                <Tab.Pane>
+                  <BlogPostsContainer></BlogPostsContainer>
+                </Tab.Pane>
+              )}
+            />
+          )
+        }
+      ];
   
       return (
         <div>
-          <Menu attached='top' tabular>
-            <Menu.Item
-              name='bio'
-              active={activeItem === 'bio'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='projects'
-              active={activeItem === 'projects'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='blog posts'
-              active={activeItem === 'blog posts'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='resume'
-              active={activeItem === 'resume'}
-              onClick={this.handleItemClick}
-              href="https://docs.google.com/document/d/1OQUFMrJGQNaVN5cG-IwrwxA2xk6tio8AHbuf-DP6m_M/edit?usp=sharing"
-            />
-          </Menu>
-  
-          {this.state.activeItem === "bio" ? <Segment attached="bottom"><Bio></Bio></Segment> : null}
-          {this.state.activeItem === "projects" ? <Segment id="projects" attached="bottom"><ProjectsContainer></ProjectsContainer></Segment> : null}
-          {this.state.activeItem === "blog posts" ? <Segment id="blog posts" attached="bottom"><BlogPostsContainer></BlogPostsContainer></Segment> : null}
-       
+          <Switch>
+            <Tab renderActiveOnly={false} activeIndex={-1} panes={panes} />
+          </Switch>
         </div>
       )
     }

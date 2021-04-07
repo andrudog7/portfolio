@@ -1,17 +1,15 @@
 import React from 'react'
-import Backdrop from '../Assets/backdrop.png'
 import Profile from '../Assets/profile2.png'
 import Github from './Github'
 import LinkedIn from './LinkedIn'
 import Instagram from './Instagram'
 import Email from './Email'
-import { Container, Image, Header} from 'semantic-ui-react';
+import { Container, Image} from 'semantic-ui-react';
 
 class Bio extends React.Component {
   render() {
     return (
       <div id="bio" style={{paddingLeft:"15%"}}>
-        {/* <Image src={Backdrop} style={{opacity:.5,height:"25vh",width:"98vw"}}></Image> */}
         <figure style={{display:"inline-block",float:"left",marginTop:"50px"}}>
                 <Image src={Profile} floated="left" size="medium"></Image>
             </figure>
@@ -24,7 +22,6 @@ class Bio extends React.Component {
             </p>
             <p>I am a marathon runner who enjoys traveling and experiencing other cultures.  I enjoy coding because it allows me to solve logical problems in a creative way.</p>
             <br></br>
-            {/* <h2 className="bio-header" style={{marginTop:"-30px"}}>Let's Connect!</h2> */}
             <p>LET'S CONNECT!</p>
             {Github()}
             {LinkedIn()}

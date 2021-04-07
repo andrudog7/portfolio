@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Card, Image, Icon} from 'semantic-ui-react';
+import { Grid, Card, Image} from 'semantic-ui-react';
 
 class BlogPostCard extends React.Component {
   render() {
