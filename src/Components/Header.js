@@ -4,9 +4,9 @@ import { Image} from 'semantic-ui-react';
 
 export default function Github() {
     return (
-        <>
+        <div>
         <Image id="namelogo" src={namelogo} size="small" floated="left" centered></Image><br></br>
         <p id="name">ANDREW SMOKER</p>
-        </>
+        </div>
     )
 }

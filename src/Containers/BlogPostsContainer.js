@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid} from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 import BlogPostCard from '../Components/BlogPostCard'
 
 class BlogPostsContainer extends React.Component {
@@ -34,11 +34,9 @@ class BlogPostsContainer extends React.Component {
   render() {
     let showBlogPosts = this.state.posts.map((p, index) => <BlogPostCard post={p} content={this.state.content[index]}></BlogPostCard>)
     return (
-        <Grid centered container>
-            <Grid.Row columns={3}>
-              {showBlogPosts}  
-            </Grid.Row>
-        </Grid>
+        <Card.Group id="bloggroup" doubling stackable itemsPerRow={3}>
+            {showBlogPosts}
+        </Card.Group>
     );
   }
 }
