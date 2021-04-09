@@ -9,9 +9,10 @@ class App extends React.Component {
 
   componentDidMount() {
     if (window.location.pathname === "/") {
-      window.location.pathname = '/bio'
+      window.location.pathname = "/bio"
     }
   }
+
   render() {
     return (
       <div>
