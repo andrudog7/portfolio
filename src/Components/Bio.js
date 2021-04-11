@@ -9,11 +9,13 @@ import { Container, Image} from 'semantic-ui-react';
 class Bio extends React.Component {
   render() {
     return (
-      <div id="bio" style={{paddingLeft:"15%"}}>
-        <figure style={{display:"inline-block",float:"left",marginTop:"50px"}}>
+      <div id="bio">
+            <Container style={{maxWidth:"100%"}}>
+              <br></br>
+            <figure style={{display:"inline-block",float:"left",marginTop:"0px"}}>
                 <Image src={Profile} floated="left" size="medium"></Image>
-            </figure>
-            <Container text>
+                <figcaption>{Github()}{LinkedIn()}{Email()}{Instagram()}</figcaption>
+            </figure>  
             <br></br>
             
             <p>I am a full-stack web developer, specialized in Ruby on Rails, React and Javascript.  I am open to new opportunities where I can use my skills in creating user-friendly applications.  I'm excited to join a team whose mission is to make things a little easier for their clients.  We all could use a little easy these days!</p>
@@ -22,11 +24,9 @@ class Bio extends React.Component {
             </p>
             <p>I am a marathon runner who enjoys traveling and experiencing other cultures.  I enjoy coding because it allows me to solve logical problems in a creative way.</p>
             <br></br>
-            <p>LET'S CONNECT!</p>
-            {Github()}
-            {LinkedIn()}
-            {Email()}
-            {Instagram()}
+            <br></br>
+            <br></br>
+            <br></br>
             <br></br>
             <br></br>
         </Container>
