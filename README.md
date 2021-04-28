@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-I built this app as a resource I could give potential employees.  It is a website of all my accomplishments at Flatiron School.  Excited to share it with everyone!
+I built this app as a resource I could give potential employees.  It is a website of all my accomplishments at Flatiron School.  Excited to share it with everyone!  Visit the live site at https://andrewsmoker.herokuapp.com/
 
 # Getting Started with Create React App
 
