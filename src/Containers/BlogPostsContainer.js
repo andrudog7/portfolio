@@ -17,15 +17,15 @@ class BlogPostsContainer extends React.Component {
                 text
             }
             let content = []
-            content.push(shortenText(data.items[0].content, 110, 300))
-            content.push(shortenText(data.items[1].content, 110, 300))
-            content.push(shortenText(data.items[2].content, 110, 300))
-            content.push(shortenText(data.items[3].content, 110, 300))
-            content.push(shortenText(data.items[4].content, 109, 300))
-            content.push(shortenText(data.items[5].content, 109, 300))
-            content.push(shortenText(data.items[6].content, 108, 300))
-            content.push(shortenText(data.items[7].content, 160, 300))
-            content.push(shortenText(data.items[8].content, 109, 300))
+            content.push(shortenText(data.items[0].content, 4, 297))
+            content.push(shortenText(data.items[1].content, 110, 358))
+            content.push(shortenText(data.items[2].content, 110, 349))
+            content.push(shortenText(data.items[3].content, 110, 302))
+            content.push(shortenText(data.items[4].content, 109, 299))
+            content.push(shortenText(data.items[5].content, 109, 437))
+            content.push(shortenText(data.items[6].content, 108, 443))
+            content.push(shortenText(data.items[7].content, 160, 462))
+            content.push(shortenText(data.items[8].content, 109, 299))
             this.setState({
                 posts: data.items,
                 content: content
